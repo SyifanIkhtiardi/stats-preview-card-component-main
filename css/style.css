@@ -25,6 +25,7 @@ body {
     background-color: var(--card-bg);
     height: auto;
     border-radius: 10px;
+    overflow: hidden;
 }
 .img-card {
     height: 35vh;
@@ -82,10 +83,11 @@ ul li h4 {
     text-decoration: none;
 }
 
-/* Media query: 1440px */
-@media screen and (min-width: 1440px) {
+/* Media query: min 1100px */
+@media screen and (min-width: 1100px) {
     body {
-        padding: 200px;
+        padding: 100px;
+        height: 100vh;
         
     }
     .card {
@@ -110,41 +112,14 @@ ul li h4 {
     }
 }
 
-/* Media query: 1025px */
-@media screen and (min-width: 1025px) {
+/* Media query: min 768px */
+@media (min-width: 768px) and (max-width: 1099px) {
     body {
-        padding: 150px 100px;
-        
-    }
-    .card {
-        display: flex;
-        flex-direction: row-reverse;
-        text-align: left;
+        padding-right: 150px;
+        padding-left: 150px;
     }
     .img-card {
-        background-image: url("../images/image-header-desktop.jpg");
-        height: auto;
-        width: 120%;
+        height: 40vh;
     }
-    .txt-card {
-        padding: 70px 70px 50px 70px;
-    }
-    .txt-card p {
-        margin-bottom: 60px;
-    }
-    ul li {
-        float: left;
-        margin-right: 30px;
-    }
-}
 
-/* Media query: min width 768 */
-@media screen and (min-width: 768px) {
-    body {
-        padding: 80px 60px;
-    }
-    .img-card {
-        height: 50vh;
-    }
 }
-
