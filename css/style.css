@@ -83,8 +83,37 @@ ul li h4 {
     text-decoration: none;
 }
 
+/* Media query: min 1440 */
+@media screen and (min-width: 1440px) {
+    body {
+        padding: 200px;
+        height: 100vh;
+        
+    }
+    .card {
+        display: flex;
+        flex-direction: row-reverse;
+        text-align: left;
+    }
+    .img-card {
+        background-image: url("../images/image-header-desktop.jpg");
+        height: auto;
+        width: 100%;
+    }
+    .txt-card {
+        padding: 70px 70px 50px 70px;
+    }
+    .txt-card p {
+        margin-bottom: 60px;
+    }
+    ul li {
+        float: left;
+        margin-right: 30px;
+    }
+}
+
 /* Media query: min 1100px */
-@media screen and (min-width: 1100px) {
+@media (min-width: 1100px) and (max-width: 1439px) {
     body {
         padding: 100px;
         height: 100vh;
@@ -98,7 +127,7 @@ ul li h4 {
     .img-card {
         background-image: url("../images/image-header-desktop.jpg");
         height: auto;
-        width: 120%;
+        width: 100%;
     }
     .txt-card {
         padding: 70px 70px 50px 70px;
